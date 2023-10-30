@@ -1,15 +1,48 @@
-Complejo Futbolístico “Los Mejengueros”
-
-
-Como parte de la digitalización de modelos de negocio, el complejo futbolístico “Los Mejengueros” ha decido establecer su negocio en la WEB, razón por la cual ustedes han sido contratados para desarrollar una aplicación en Python como primer paso a la modernización.
-El complejo cuenta con un Administrador, quién es el responsable de activar clientes, llevar estadísticas de las reservas y llevar la caja diaria.
-Los clientes pueden inscribirse brindando los datos básicos, sin embargo, pueden realizar reservas únicamente si son aceptados (estar activos) por el Administrador.
-Cuando un cliente quiere realizar una reserva, se solicita el número de cancha, el día y la hora; posteriormente el Administrador revisa la reserva y si los datos están en orden, procede a confirmar la cancha.
-
-El local cuenta con tres canchas de fútbol 5, una de fútbol 7 y una cancha para fútbol 11, todas habilitadas los 7 días de la semana en horario de 10 am a 9 pm. El valor de cada cancha se desglosa de la siguiente forma:
-1)	Cancha de fútbol 5: 30 mil colones.
-2)	Cancha de fútbol 7: 50 mil colones.
-3)	Cancha de fútbol 11: 95 mil colones.
+ <div
+      style="
+        background-color: #020617;
+        color: #e2e8f0;
+        font-weight: bold;
+        width: 100%;
+        padding: 1rem;
+      "
+    >
+      <div
+        style="
+          text-align: center;
+          background-color: #0f172a;
+          border-radius: 10px;
+          padding: 2rem;
+          font-style: italic;
+          font-weight: bold;
+          font-size: 2rem;
+        "
+      >
+        Complejo Futbolístico Los Mejengueros
+      </div>
+      <div style="margin-top: 3rem; font-family: Arial; font-size: 1rem">
+        Como parte de la digitalización de modelos de negocio, el complejo
+        futbolístico “Los Mejengueros” ha decido establecer su negocio en la
+        WEB, razón por la cual ustedes han sido contratados para desarrollar una
+        aplicación en Python como primer paso a la modernización. El complejo
+        cuenta con un Administrador, quién es el responsable de activar
+        clientes, llevar estadísticas de las reservas y llevar la caja diaria.
+        Los clientes pueden inscribirse brindando los datos básicos, sin
+        embargo, pueden realizar reservas únicamente si son aceptados (estar
+        activos) por el Administrador. Cuando un cliente quiere realizar una
+        reserva, se solicita el número de cancha, el día y la hora;
+        posteriormente el Administrador revisa la reserva y si los datos están
+        en orden, procede a confirmar la cancha. El local cuenta con tres
+        canchas de fútbol 5, una de fútbol 7 y una cancha para fútbol 11, todas
+        habilitadas los 7 días de la semana en horario de 10 am a 9 pm. El valor
+        de cada cancha se desglosa de la siguiente forma:
+        <ul style="list-style: none; padding: 1rem">
+          <li class="li">1) Cancha de fútbol 5: 30 mil colones.</li>
+          <li class="li">2) Cancha de fútbol 7: 50 mil colones.</li>
+          <li class="li">3) Cancha de fútbol 11: 95 mil colones.</li>
+        </ul>
+      </div>
+    </div>
 
 
 
