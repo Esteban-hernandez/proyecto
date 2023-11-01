@@ -26,7 +26,10 @@ print("\tBienvenido al Complejo Futbolístico “Los Mejengueros”")
 print("\t======================================================\n")
 
 #Menu Principal
-print("\tMenu")
+
+print("\t======================================================")
+print("\tMenu principal")
+print("\t======================================================\n")
 print("\t[1] Módulo de Clientes")
 print("\t[2] Módulo de Administrador")
 print("\t[3] Módulo de Reserva")
@@ -52,11 +55,12 @@ while ciclo_menu_principal == True:
         modulo = "salir"
         ciclo_menu_principal = False
     else:
-        print("\tEl modulo seleccionado no es valido. intente de nuevo\n")
-
-    print("\t======================================================")
-    print("\tModulo ",modulo)
-    print("\t======================================================\n")
+        print("\tEl modulo ",modulo," no es valido. intente de nuevo\n")
+    
+    if modulo == "clientes" or modulo == "administrador" or modulo == "reservas" or modulo == "informes":
+        print("\t======================================================")
+        print("\tModulo ",modulo)
+        print("\t======================================================\n")
 
 
 #Menu Módulo de Clientes 
@@ -73,23 +77,25 @@ while ciclo_menu_clientes == True:
     if opcion_menu_cliente == "1":
         opcion_menu_cliente = "registrarse"
         ciclo_menu_clientes = False
-    if opcion_menu_cliente == "2":
+    elif opcion_menu_cliente == "2":
         opcion_menu_cliente = "actualizar"
         ciclo_menu_clientes = False
     elif opcion_menu_cliente == "3":
         opcion_menu_cliente = "consultar"
         ciclo_menu_clientes = False
-    elif opcion_menu_cliente == "3":
+    elif opcion_menu_cliente == "4":
         opcion_menu_cliente = "lista_reservas"
         ciclo_menu_clientes = False
     elif opcion_menu_cliente == "5":
         ciclo_menu_clientes = False
     else:
-        print("\tLa opcion seleccionada no es valido. intente de nuevo\n")
+        print("\tLa opcion ",opcion_menu_cliente," no es valido. intente de nuevo\n")
 
 
 #Registraser
 if modulo == "clientes" and opcion_menu_cliente == "registrarse":
+    print("\n\tCREAR CUENTA\n")
+    
     identificacion = input("\tDigite su nemro de identificacion: \n\t")
     nombre = input("\tDigite su nombre: \n\t")
     primerApellido = input("\tDigite su primer apellido: \n\t")
@@ -97,3 +103,23 @@ if modulo == "clientes" and opcion_menu_cliente == "registrarse":
     telefono = input("\tDigite su numero de telefono: \n\t")
     correo = input("\tDigite su correo: \n\t")
     estado = "inactivo"
+
+#Actualizar dato del cliente
+elif modulo == "clientes" and opcion_menu_cliente == "actualizar":
+    print("\n\tACTUALIZAR DATOS PERSONALES\n")
+
+    identificacion = input("\tDigite su nemro de identificacion: \n\t")
+    nombre = input("\tDigite su nombre: \n\t")
+    primerApellido = input("\tDigite su primer apellido: \n\t")
+    segundoApellido = input("\tDigite su segundo apellido: \n\t")
+    telefono = input("\tDigite su numero de telefono: \n\t")
+    correo = input("\tDigite su correo: \n\t")
+    estado = "inactivo"
+
+#Consultar un cliente
+if modulo == "clientes" and opcion_menu_cliente == "consultar":
+    print("\n\tDATOS DEL CLIENTE\n")
+
+#Listado de reservas
+if modulo == "clientes" and opcion_menu_cliente == "lista_reservas":
+    print("\n\tLISTA DE RESERVAS\n")
