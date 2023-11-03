@@ -15,7 +15,7 @@ print("\t[5] Salir")
 
 ciclo_menu_principal = True
 while ciclo_menu_principal == True:
-    modulo = input("\tSeleccione un modulo (1,2,3,4,5)  ")
+    modulo = input("\tSeleccione un módulo (1,2,3,4,5)  ")
     if modulo == "1":
         modulo = "clientes"
         ciclo_menu_principal = False
@@ -32,11 +32,11 @@ while ciclo_menu_principal == True:
         modulo = "salir"
         ciclo_menu_principal = False
     else:
-        print("\tEl modulo ",modulo," no es valido. intente de nuevo\n")
+        print("\tEl módulo ",modulo," no es valido. intente de nuevo\n")
     
     if modulo == "clientes" or modulo == "administrador" or modulo == "reservas" or modulo == "informes":
         print("\n\t======================================================")
-        print("\tModulo ",modulo)
+        print("\tMódulo ",modulo)
         print("\t======================================================\n")
 
 
@@ -46,7 +46,7 @@ if modulo == "clientes":
     print("\t[1] Registrarse")
     print("\t[2] Actualizar un cliente existente")
     print("\t[3] Consultar un cliente")
-    print("\t[4] lista de reservas")
+    print("\t[4] Lista de reservas")
     print("\t[5] Salir")
 
     ciclo_menu_clientes = True
@@ -81,11 +81,11 @@ if modulo == "clientes":
 if modulo == "clientes" and opcion_menu_cliente == "registrarse":
     print("\n\tCREAR CUENTA\n")
     
-    identificacion = input("\tDigite su nemro de identificacion: \n\t")
+    identificacion = input("\tDigite su número de identificación: \n\t")
     nombre = input("\tDigite su nombre: \n\t")
     primerApellido = input("\tDigite su primer apellido: \n\t")
     segundoApellido = input("\tDigite su segundo apellido: \n\t")
-    telefono = input("\tDigite su numero de telefono: \n\t")
+    telefono = input("\tDigite su número de telefono: \n\t")
     correo = input("\tDigite su correo: \n\t")
     estado = "inactivo"
 
@@ -95,12 +95,12 @@ if modulo == "clientes" and opcion_menu_cliente == "registrarse":
 elif modulo == "clientes" and opcion_menu_cliente == "actualizar":
     print("\n\tACTUALIZAR DATOS PERSONALES\n")
 
-    identificacion = input("\tDigite su numero de identificacion: \n\t")
+    identificacion = input("\tDigite su numero de identificación: \n\t")
 
     nombre = input("\tDigite su nombre: \n\t")
     primerApellido = input("\tDigite su primer apellido: \n\t")
     segundoApellido = input("\tDigite su segundo apellido: \n\t")
-    telefono = input("\tDigite su numero de telefono: \n\t")
+    telefono = input("\tDigite su número de telefono: \n\t")
     correo = input("\tDigite su correo: \n\t")
     estado = "inactivo"
 
@@ -109,11 +109,11 @@ elif modulo == "clientes" and opcion_menu_cliente == "actualizar":
 # C) Consultar un cliente: Solicitando la identificación, desplegará la información básica del cliente.
 elif modulo == "clientes" and opcion_menu_cliente == "consultar":
     print("\n\tDATOS DEL CLIENTE\n")
-    identifiacion = input("\tDigite su nuemero de identificacion: ")
+    identifiacion = input("\tDigite su número de identificación: ")
 
 # D) Listado de reservas: mediante el cual el cliente podrá revisar las reservas que ha realizado en el complejo.
 elif modulo == "clientes" and opcion_menu_cliente == "lista_reservas":
     print("\n\tLISTA DE RESERVAS\n")
-    identificacion = input("\tDigite su numero de identificacion para visualizar sus reservas: ")
+    identificacion = input("\tDigite su número de identificación para visualizar sus reservas: ")
 
     # codigo .......
