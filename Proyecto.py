@@ -42,7 +42,6 @@ def modulo_administrador():
     Menu("Menu módulo  activar cliente")
 def activar_cliente():
     print("activar cliente")
-
 def revisar_reservas():
     print("Revisar reservas")
 
@@ -51,9 +50,6 @@ def modulo_reserva():
     print("Modulo reserva")
 
 #==================================   Menu   ===================================
-
-
-
 def generador_opcion(num):
     data=[]
     for i in range(num):
@@ -92,4 +88,5 @@ MENU = {
     ]
 }
 
+# inicio del programa
 Menu("Menu principal")
